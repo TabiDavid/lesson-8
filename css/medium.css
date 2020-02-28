@@ -28,7 +28,7 @@ nav {
 
 .containpeople {
     max-width: 650px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
     
 }

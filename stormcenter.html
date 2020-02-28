@@ -47,71 +47,68 @@
         
         <main>
             <div>
-                <h2>Weather Gallery</h2>
+                <h2>Text Input Flied</h2>
             </div>
             <section class="containpeople">
                 
-            <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather1.jpg" alt="Image one">
-                  </picture >
-                  <p>Person holding an umbrella under snowing</p>
-            </div>
-            <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather2.jpg" alt="Image two"> 
-                </picture>
-                <p>red and gray clouds over the city</p>
-            </div>
-            <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather3.jpg" alt="Image three">
-                 
-                </picture>
-                <p>Green-leafed trees in the forest during daytime</p>
-            </div>
-            <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather4.jpg" alt="Image four">
-                  
-                </picture>
-                <p>Green grass field during foogy weather</p>
-            </div>
-              <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather5.jpg" alt="Image five">
-                 
-                </picture>
-                <p>Lightning strike at night</p>
-              </div>
-              <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather6.jpg" alt="Image six">
-                  
-                  </picture>
-                  <p>Yellow and black bus on asphalt road between buildings during daytime</p>
-              </div>
-              <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather7.jpg" alt="Image six">
-               
-                </picture>
-                <p>Blue sea under sky and white clouds during daytime</p>  
-              </div>
-            <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather8.jpg" alt="Image six">
-                  
-                </picture>
-                <p>Green bush during rainy day</p>
-            </div>
-              <div>
-                <picture class="people">
-                    <img src="img7/placeholder.jpg" data-src="img7/weather9.jpg" alt="Image six">
-                
-                </picture>
-                <p>White cloud</p>  
-              </div>
+                <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value="" placeholder="First name"><br>
+                    <label for="lname">email:</label>
+                    <input type="text" id="lname" name="lname" value="" placeholder="your@email.com"><br>
+
+                    <label for="pnumber">Phone Number:</label>
+                    <input type="text" id="pnumber" name="pnumber" value="" placeholder="###-###-###"><br>
+                    <label for="zipcode">Zip code:</label>
+                    <input type="text" id="zipcode" name="zipcode" value="" placeholder="00000"><br>
+                  </form>
+                  <h3>Storm Information</h3>
+                  <form>
+                    <label for="Sdate">Storm Date:</label>
+                    <input type="text" id="Sdate" name="Sdate" value="" ><br>
+
+                        <label for="stormtype">Type of Storm:</label>
+                        <select id="stormtype" name="stormtype">
+                            <option value="select">Select</option>
+                            <option value="Flash-flood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="fiat">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                          </select>
+                            <br>
+                          <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                    <span id="ratingvalue">5</span>
+                            </label>
+                    
+                                <datalist id="tickmarks">
+                      <option value="0">
+                      <option value="1">
+                      <option value="2">
+                      <option value="3">
+                      <option value="4">
+                      <option value="5">
+                      <option value="6">
+                      <option value="7">
+                      <option value="8">
+                      <option value="9">
+                      <option value="10">
+                          <br>
+                  </form>
+                  <h3>Hello world
+                      
+                  </h3>
+                  <form>
+                    <label for="stormR">Select Storm Region:</label>
+                    <select id="stormR" name="stormR">
+                        <option value="select2">Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fishhavin">Fish Havin</option>
+                        
+                      </select>
+                  </form>
               
             </section>
            
