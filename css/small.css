@@ -122,6 +122,13 @@ input {
 text-align: center;
 
 }
+
+.thank {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: large;
+}
+
 footer {
     max-width: 900px;
     margin: 0 auto;
