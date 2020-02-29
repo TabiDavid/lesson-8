@@ -101,7 +101,10 @@ nav {
 gallery image code
 */
 main {
+    max-width: 900px;
     background-color: grey;
     padding: 5px;
+    margin: auto;
+    text-align: center;
 }
 
