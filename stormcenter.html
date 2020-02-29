@@ -47,9 +47,9 @@
         
         <main>
             <div>
-                <h2>Text Input Flied</h2>
+                <h2>FORM</h2>
             </div>
-            <div class="fcontainer">
+          
                 <form method="get" action="thanks.html">
                   <fieldset>
                       <legend>Data Information</legend>
@@ -64,7 +64,7 @@
                     <br>
                     <label>* Email: 
                     <input type="email" name="email" 
-                    placeholder="your@email.com"></label><br>
+                    requere placeholder="your@email.com"></label><br>
         
                     <label>* Phone Number:
                       <input
@@ -75,14 +75,13 @@
                         placeholder="###-###-####">
                         </label>
                         <br>
-                    <label>* Zip code: <input type="number" 
-                        name="zipcode" placeholder="00000" 
-                        required ></label>
+                        <label for="num">* Zip Code:
+                            <input type="number" id="num" name="num" 
+                            pattern="(\d{5}([\-]\d{4})?)" 
+                            autocomplete="shipping postal-codep" placeholder="00000" require ></label><br>
         
                   </fieldset>
                
-                  
-
                   <fieldset>
                     <legend>Storm Information</legend>
                     <label>Storm Date: <input type="date" name="theDate">
@@ -102,38 +101,35 @@
                       <option value="Tornado"> </option>
                     </datalist>
                         <br>
-                    <label class="flexly" for="rating">
-                        Storm severity (1 to 10):&nbsp;&nbsp;&nbsp;
-                      <input
-                        name="sseverity"
-                        type="range"
-                        id="rating"
-                        value="5"
-                        min="1"
-                        max="10"
-                        step="1"
-                        list="tickmarks"
-                        oninput="adjustRating(this.value)"
-                        onchange="adjustRating(this.value)">
-                      <span id="ratingvalue">5</span>
-                    </label>
-        
+                        <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                            <input type="range" 
+                            id="rating" 
+                            value="5" 
+                            min="1" 
+                            max="10" 
+                            step="1" 
+                            list="tickmarks" 
+                            oninput="adjustRating(this.value)" 
+                            onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                            </label>
+                    
                     <datalist id="tickmarks">
-                      <option value="0"> </option>
-                      <option value="1"> </option>
-                      <option value="2"> </option>
-                      <option value="3"> </option>
-                      <option value="4"> </option>
-                      <option value="5"> </option>
-                      <option value="6"> </option>
-                      <option value="7"> </option>
-                      <option value="8"> </option>
-                      <option value="9"> </option>
-                      <option value="10"> </option>
+                      <option value="0">
+                      <option value="1">
+                      <option value="2">
+                      <option value="3">
+                      <option value="4">
+                      <option value="5">
+                      <option value="6">
+                      <option value="7">
+                      <option value="8">
+                      <option value="9">
+                      <option value="10">
                     </datalist>
                         <br>
-                    <label for="sregion">Storm Region:</label>
-                    <select id="sregion" name="sregion">
+                    <label for="region">Storm Region:</label>
+                    <select id="region" name="region">
                       <option value="select" disabled selected >Select Region ...</option>
                       <option value="preston">Preston</option>
                       <option value="ssprings">Soda Springs</option>
@@ -142,25 +138,25 @@
                     <br>
                   </fieldset>
                   <fieldset>
+                      <Legend>Danger Level</Legend>
                     <label>User in-danger level:</label>
         
-                    <div>
-                      <input type="radio" id="yes" name="level" value="yes" checked>
-                      <label for="yes">yes</label>
+                    <div class="selection">
+                        <label for="yes"><input type="radio" id="yes" name="danger1" value="yes">Yes</label>
                     </div>
-        
-                    <div>
-                      <input type="radio" id="maybe" name="level" value="maybe">
-                      <label for="maybe">maybe</label>
-                    </div>
-        
-                    <div>
-                      <input type="radio" id="no" name="level" value="no">
-                      <label for="no">no</label>
-                    </div>
+
+                    <div class="selection">
+                        <label for="No"><input type="radio" id="No" name="danger2" value="no">No</label>
+                        </div>
+
+                        <div class="selection">
+                            <label for="maybe"><input type="radio" id="maybe" name="danger3" value="maybe">Maybe</label>
+                        </div>
+
                   </fieldset>
         
                   <fieldset>
+                      <Legend>Secondary Information</Legend>
                     <label>Additional information or comments:</label><br>
                     <textarea name="information" id="comments" placeholder="Write something ..."></textarea>
                   </fieldset>
@@ -169,8 +165,6 @@
                     <input type="submit">
                   </div>
                 </form>
-              </div>
-                  
         </main>
         
         <footer>
@@ -183,5 +177,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/lazyload.js" defer></script>
     <script src="js/preston-7.js"></script>
+    <script src="js/stormcenter.js"></script>
     </body>
 </html>

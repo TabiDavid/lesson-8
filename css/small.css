@@ -82,7 +82,7 @@ nav {
 }
 .navigation a {
     display: block;
-    color:rgb(83, 221, 231);
+    color:rgb(65, 206, 119);
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
@@ -102,9 +102,28 @@ gallery image code
 */
 main {
     max-width: 900px;
-    background-color: grey;
-    padding: 5px;
+    background-color: rgb(231, 210, 210);
+    padding: 15px;
     margin: auto;
+    text-align: left;
+}
+legend {
+    padding: 5px;
+    margin: 10px;
     text-align: center;
+    font-size: large;
+}
+
+input {
+    padding: 5px;
+    margin: 4px;
+}
+.button {
+text-align: center;
+
+}
+footer {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
