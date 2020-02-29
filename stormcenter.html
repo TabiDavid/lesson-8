@@ -51,69 +51,67 @@
             </div>
             <div>
             <section class="containpeople">
-                
-                <form>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" value="" placeholder="First name"><br>
-                    <label for="lname">email:</label>
-                    <input type="text" id="lname" name="lname" value="" placeholder="your@email.com"><br>
-
-                    <label for="pnumber">Phone Number:</label>
-                    <input type="text" id="pnumber" name="pnumber" value="" placeholder="###-###-###"><br>
-                    <label for="zipcode">Zip code:</label>
-                    <input type="text" id="zipcode" name="zipcode" value="" placeholder="00000"><br>
-                  </form>
-                  </div>
+                <fieldset>
+                    <form>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" value="" placeholder="First name"><br>
+                        <label for="lname">email:</label>
+                        <input type="text" id="lname" name="lname" value="" placeholder="your@email.com"><br>
+    
+                        <label for="pnumber">Phone Number:</label>
+                        <input type="text" id="pnumber" name="pnumber" value="" placeholder="###-###-###"><br>
+                        <label for="zipcode">Zip code:</label>
+                        <input type="text" id="zipcode" name="zipcode" value="" placeholder="00000"><br>
+                      </form>
+                      </div>
+                </fieldset>
+               
                   <h3>Storm Information</h3>
-                  
-                  <div>
-                      <form>
-                    <label for="Sdate">Storm Date:</label>
-                    <input type="text" id="Sdate" name="Sdate" value="" ><br>
 
-                        <label for="stormtype">Type of Storm:</label>
-                        <select id="stormtype" name="stormtype">
-                            <option value="select">Select</option>
-                            <option value="Flash-flood">Flash Flood</option>
-                            <option value="hail">Hail</option>
-                            <option value="fiat">Hurricane</option>
-                            <option value="thunderstorm">Thunderstorm</option>
-                            <option value="tornado">Tornado</option>
-                          </select>
-                            <br>
-                          <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                                    <span id="ratingvalue">5</span>
-                            </label>
+                  <fieldset>
                     
-                                <datalist id="tickmarks">
-                      <option value="0">
-                      <option value="1">
-                      <option value="2">
-                      <option value="3">
-                      <option value="4">
-                      <option value="5">
-                      <option value="6">
-                      <option value="7">
-                      <option value="8">
-                      <option value="9">
-                      <option value="10">
-                          <br>
-                  </form>
+                        <form>
+                      <label for="Sdate">Storm Date:</label>
+                      <input type="text" id="Sdate" name="Sdate" value="" ><br>
+  
+                          <label for="stormtype">Type of Storm:</label>
+                          <select id="stormtype" name="stormtype">
+                              <option value="select">Select</option>
+                              <option value="Flash-flood">Flash Flood</option>
+                              <option value="hail">Hail</option>
+                              <option value="fiat">Hurricane</option>
+                              <option value="thunderstorm">Thunderstorm</option>
+                              <option value="tornado">Tornado</option>
+                            </select>
+                              <br>
+                            <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                              <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                      <span id="ratingvalue">5</span>
+                              </label>
+                      
+                                  <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                            <br>
+                  
+                      <label for="stormR">Select Storm Region:</label>
+                      
+                          <option value="select2">Select</option>
+                          <option value="preston">Preston</option>
+                          <option value="soda">Soda Springs</option>
+                          <option value="fishhavin">Fish Havin</option>
 
-                  <form>
-                    <label for="stormR">Select Storm Region:</label>
-                    <select id="stormR" name="stormR">
-                        <option value="select2">Select</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda">Soda Springs</option>
-                        <option value="fishhavin">Fish Havin</option>
-                        
-                      </select>
-                  </form>
-              
-            </section>
-                  </div>
+                  </fieldset>
+                  
         </main>
         
         <footer>

@@ -24,12 +24,6 @@ nav {
 .navigation li:first-child {
     display: none;
 }
-
-
-/*.containpeople {
-    max-width: 650px;
-    grid-template-columns: 1fr;
-}*/
     
 }
     

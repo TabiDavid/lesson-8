@@ -103,11 +103,5 @@ gallery image code
 main {
     background-color: grey;
     padding: 5px;
-    
 }
-.containpeople {
-    margin: 0 auto;
-    display: grid;
-   
-    text-align: center;
-}
+
