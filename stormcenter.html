@@ -53,19 +53,20 @@
                 <form method="get" action="thanks.html">
                   <fieldset>
                       <legend>Data Information</legend>
-                    <label>Full name:
+                    <label>* Full name:
                       <input
                         type="text"
                         id="name"
                         name="name"
                         pattern="[A-z\s]{5,}"
                         required
-                        placeholder="Your name"></label>
+                        placeholder="Full name"></label>
                     <br>
-                    <label>Email: 
-                    <input type="email" name="email" placeholder="user@tbw.com"></label><br>
+                    <label>* Email: 
+                    <input type="email" name="email" 
+                    placeholder="your@email.com"></label><br>
         
-                    <label>Phone Number:
+                    <label>* Phone Number:
                       <input
                         type="tel"
                         name="phone"
@@ -74,7 +75,9 @@
                         placeholder="###-###-####">
                         </label>
                         <br>
-                    <label>Zip code: <input type="number" name="zipcode" placeholder="00000" required ></label>
+                    <label>* Zip code: <input type="number" 
+                        name="zipcode" placeholder="00000" 
+                        required ></label>
         
                   </fieldset>
                
